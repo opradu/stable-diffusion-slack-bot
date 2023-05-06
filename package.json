@@ -1,0 +1,16 @@
+{
+  "name": "invoke_slack_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "invoke_slack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.13.1",
+    "@slack/web-api": "^6.8.1",
+    "dotenv": "^16.0.3"
+  }
+}
