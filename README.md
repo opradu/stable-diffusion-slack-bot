@@ -19,7 +19,7 @@ use the folowing stable difussion modes to generate images from pompts with @men
 
 ## How to install:
 - install InvokeAi from here: https://github.com/invoke-ai/InvokeAI
-- create a .env file in the /stable_difussion_slack_bot folder
+- create a .env file in the /stable_diffusion_slack_bot folder
 In the file put your slack token, app token and the full path to the invoke.bat file
 
 SLACK_BOT_TOKEN=
@@ -28,5 +28,4 @@ SLACK_APP_TOKEN=
 
 INVOKE_BAT_PATH=Z:/invokeai/invoke.bat
 
-- install the latest version of nodejs (64bit) https://nodejs.org/en/download
-- type "npm run start" in the /stable_difussion_slack_bot folder
+- double click on /stable_diffusion_slack_bot/run.bat file
