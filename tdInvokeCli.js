@@ -17,7 +17,7 @@ module.exports = class tdInvokeCli {
 
 
         // show full console output
-        this.showConsoleDebug = true;
+        this.showConsoleDebug = false;
 
         // fix double onProgress callbacks
         this.lastProgressValue = null;

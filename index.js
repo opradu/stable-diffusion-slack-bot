@@ -21,7 +21,7 @@ const app = new App({
 
 
 let invokeCli = new tdInvokeCli();
-invokeCli.setInvokeAiBatPath("Z:/invokeai/invoke.bat");
+invokeCli.setInvokeAiBatPath(process.env.INVOKE_BAT_PATH);
 
 invokeCli.onMessage = function (taskId, messageType, messageString) {
     console.log ("onMessage", taskId, messageType, messageString);
@@ -154,7 +154,7 @@ app.event("app_mention", async ({ event, client }) => {
         const originalMessage = event.text.replace(/<@.*?>/g, '').trim();
 
         //invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 512 -H 512", {
-        invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 448 -H 576", {
+        invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 512 -H 512 -s70", {
             client: client,
             event: event,
             originalMessage: originalMessage
