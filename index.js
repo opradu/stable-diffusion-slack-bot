@@ -173,5 +173,5 @@ app.event("app_mention", async ({ event, client }) => {
 (async () => {
     // Start your app
     await app.start();
-    console.log("⚡️ Bolt app is running!");
+    console.log("⚡️ stable diffusion slack bot is running!");
 })();
