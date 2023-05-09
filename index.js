@@ -154,7 +154,7 @@ app.event("app_mention", async ({ event, client }) => {
         const originalMessage = event.text.replace(/<@.*?>/g, '').trim();
 
         //invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 512 -H 512", {
-        invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 512 -H 512 -s70", {
+        invokeCli.text2img("1", originalMessage + " -U 2 0.75 -ft gfpgan -W 512 -H 512 -s60", {
             client: client,
             event: event,
             originalMessage: originalMessage
